@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>login</title>
+	<link rel="stylesheet" href="../css/header.css"/>
+</head>
+<body>
+	<header>
+		<h2><a href="javascript:void(0)"></a><img src="../images/logoBig.png" alt=""></h2>
+		<span>车宝宝商家管理系统</span>
+	</header>
+	<section>
+		<div class="content content2">
+			<form action="">
+				<input type="text" placeholder="手机号">
+				<input class="authCode" type="text" placeholder="验证码">
+				<input class="receiveAuthCode" type="button" value="获取验证码">
+				<span class="remind"></span>
+				<input  id="nwd1" class="loging-psd newMargin" type="password" placeholder="新密码">
+				<input  id="nwd2" class="loging-psd newMargin" type="password" placeholder="确认新密码">
+				<span id="remind2" class="remind"></span>
+				<input class="login-btn sureBtn" type="button"value="确定"/>
+			</form>
+			
+		</div>
+	</section>
+</body>
+<script>
+	var oNwd1=document.getElementById('nwd1');
+	var oNwd2=document.getElementById('nwd2');
+	var oRemind2=document.getElementById('remind2');
+	oNwd2.onblur=function(){
+		if(oNwd1.value==oNwd2.value){
+			oRemind2.innerHTML="";
+		}
+		else{
+			oRemind2.innerHTML="两次密码输入不一致";
+		}
+	}
+</script>
+</html>

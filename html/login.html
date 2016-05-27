@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>login</title>
+	<link rel="stylesheet" href="../css/header.css"/>
+</head>
+<body>
+	<header>
+		<h2><a href="javascript:void(0)"></a><img src="../images/logoBig.png" alt=""></h2>
+		<span>车宝宝商家管理系统</span>
+	</header>
+	<section>
+		<div class="content">
+			<form action="">
+				<input id="telephone" type="text" placeholder="手机号">
+				<input id="psd"  class="loging-psd" type="password" placeholder="密码">
+				<span id="remind3" class="remind"></span>
+				<p><a href="javascript:void(0)">忘记密码？</a></p>
+				<a href="userControl.html"><input class="login-btn" type="button"value="登录"/></a>
+			</form>
+			
+		</div>
+	</section>
+</body>
+<script>
+	var oTelephone=document.getElementById('telephone');
+	var oPsd=document.getElementById('psd');
+	var oRemind3=document.getElementById('remind3');
+	if(oTelephone.value==&&oPsd.value==){
+		oRemind3.innerHTML="";
+	}
+	else{
+		oRemind3.innerHTML="用户名或密码输入错误，请重新输入！"
+	}
+</script>
+</html>

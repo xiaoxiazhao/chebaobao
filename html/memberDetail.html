@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>会员管理</title>
+	<link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+	<section class="section1">
+
+		<div class="content">
+			<div class="contentR">
+				<div class="contentRD">
+					<ul class="memberInfodetail userControl memberDetail">
+						<li>累计消费金额<span>￥2888</span>人</li>
+						<li>剩余洗车次数<span>88</span><i>(大车)</i><span>12</span><i>(小车)</i></li>
+						<li class="marginR0">剩余洗车次数<span>5888</span><i>(大车)</i><span>6888</span><i>(小车)</i></li>
+					</ul>
+					<div class="addMcontent">
+			<form action="">
+				<div class="memberInfoList"><laber for="tel">手机</laber><input class="inputCom" type="text" name="tel"></div>
+				<div class="memberInfoList"><laber for="name">姓名</laber><input class="inputCom" type="text" name="name"></div>
+				<div class="memberInfoList" id="sex"><span>性别</span>
+
+					 <laber for="sex"><input class="sexRadio" name="sex" type="radio" checked="checked"><i class="point"></i>男</laber>
+					 					<laber for="sex"><input class="sexRadio" name="sex" type="radio"><i class="point"></i>女</laber>
+				</div>
+				<div class="memberInfoList">
+					<span class="left">车型</span>
+					<select name="" id="" class="left">
+						<option value="" selected="selected" disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;品牌</option>
+						<option value="">aa</option>
+						<option value="">bb</option>
+					</select><span class="menulist menulist1"></span><select class="marginR0" name="" id="">
+						<option value="" selected="selected" disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;型号</option>
+						<option value="">aa</option>
+						<option value="">bb</option>
+					</select><span class="menulist menulist2"></span>
+					
+				</div>
+				<div class="memberInfoList">
+					<span>车牌</span><select name="" id=""></select><span class="menulist menulist3"></span><input class="marginR0 inputSlect" type="text" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;输入车牌号"/>
+				</div>
+				<div class="memberInfoList memberInfoListRemark">
+					<span class="left">备注</span><textarea class="left" name="" id="" cols="30" rows="10"></textarea>
+				</div>
+				<div class="addSureBtn"><input type="button" value="保存"><input type="button" value="删除"></div>
+			</form>
+		</div>
+				</div>
+			</div>
+			<div class="maskLayerR"></div>
+			<div class="playWindow">
+				<div class="playWindowU"><span class="close"></span></div>
+				<ul class="playWindowD">
+					<li>流水号<span>1234567890</span></li>
+					<li>服务项目<span>充值</span></li>
+					<li>充值账号<span>18210898122</span></li>
+					<li>充值金额<i>￥888</i></li>
+					<li>交易时间<span>2015-12-24</span></li>
+				</ul>
+			</div>
+			<div class="playWindowLead">
+				<div class="playWindowULead"><span class="close"></span></div>
+				<div class="playWindowDLead">
+					<div class="selectFile"><span>选择文件</span><input class="browseJ" type="file" value="浏览"><input class="browseZ" type="button" value="浏览"/><i>未选择文件</i></div>
+					<div>
+						<p>
+							注意事项：1.请选择您自己的文件<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.请选择您自己的文件<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.请选择您自己的文件
+						</p>
+					</div>
+					<div class="btn"><input type="button" value="取消"><input type="button" value="确定"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+<script src="../js/jquery-1.9.0.js"></script>
+<script>
+$("#sex input").click(function(){
+	$("#sex i").css("background","url('../images/common.png') no-repeat -20px -66px");
+	$(this).siblings().css("background","url('../images/common.png') no-repeat 0 -66px");
+})
+</script>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

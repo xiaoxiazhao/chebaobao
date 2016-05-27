@@ -1,0 +1,50 @@
+ <!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>添加会员</title>
+	<link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+	<section class="section1 section2">
+		<div class="addMcontent">
+			<form action="">
+				<div class="memberInfoList"><laber class="smallMR" for="tel">手机<span class="smallStyle">(必填)</span></laber><input class="inputCom" type="text" name="tel"></div>
+				<div class="memberInfoList"><laber class="smallMR" for="name">姓名<span class="smallStyle">(选填)</span></laber><input class="inputCom" type="text" name="name"></div>
+				<div class="memberInfoList" id="sex"><span>性别</span>
+
+					 <laber for="sex"><input class="sexRadio" name="sex" type="radio" checked="checked"><i class="point"></i>男</laber>
+					 					<laber for="sex"><input class="sexRadio" name="sex" type="radio"><i class="point"></i>女</laber>
+				</div>
+				<div class="memberInfoList">
+					<span class="left">车型</span>
+					<select name="" id="" class="left">
+						<option value="" selected="selected" disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;品牌</option>
+						<option value="">aa</option>
+						<option value="">bb</option>
+					</select><span class="menulist menulist1"></span><select class="marginR0" name="" id="">
+						<option value="" selected="selected" disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;型号</option>
+						<option value="">aa</option>
+						<option value="">bb</option>
+					</select><span class="menulist menulist2"></span>
+					
+				</div>
+				<div class="memberInfoList">
+					<span>车牌</span><select name="" id=""></select><span class="menulist menulist3"></span><input class="marginR0 inputSlect" type="text" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;输入车牌号"/>
+				</div>
+				<div class="memberInfoList memberInfoListRemark">
+					<span class="left">备注</span><textarea class="left" name="" id="" cols="30" rows="10"></textarea>
+				</div>
+				<div class="addSureBtn"><a href="userControl.html"><input class="addMemberSureBtn" type="button" value="添加"></a></div>
+			</form>
+		</div>
+	</section>
+</body>
+<script src="../js/jquery-1.9.0.js"></script>
+<script>
+$("#sex input").click(function(){
+	$("#sex i").css("background","url('../images/common.png') no-repeat -20px -66px");
+	$(this).siblings().css("background","url('../images/common.png') no-repeat 0 -66px");
+})
+</script>
+</html>

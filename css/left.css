@@ -1,0 +1,152 @@
+/* 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+	margin:0; padding:0;
+}
+fieldset, img { border:none; }
+img{display: block;}
+address, caption, cite, code, dfn, th, var { font-style:normal; font-weight:normal; }
+ul, ol { list-style:none; }
+body {font:12px/20px "SimSun","����","Arial Narrow",HELVETICA; background:#fff;/* overflow-y:scroll;*/ overflow-x:hidden;}
+/*a { color:#666; text-decoration:none;display:block; }
+a:visited { color:#666; }
+a:hover, a:active, a:focus { color:#ff8400; text-decoration:none;}
+*/
+a { color:black; text-decoration:none;display:block; }
+a:visited { color:black; }
+a:hover, a:active, a:focus { color:black; text-decoration:none;}
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+
+.section1{
+	width:392px;
+	height:770px;
+	background:#eef0f3;
+}
+.content{
+	width:392px;
+	height:770px;
+	
+	position:relative;
+	
+	
+}
+.contentL{
+	width:166px;
+	background:#feffff;
+	height:770px;
+	float:right;
+	
+	position:fixed;
+	right:5px;
+	z-index:2;
+}
+.list .yi{
+	width:100%;
+	
+	text-align:center;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	font-size: 15px;
+	font-weight: 900;
+	
+	
+}
+.yi .er li a{
+	display:inline-block;
+	padding:7px 0;
+	
+	
+}
+.yi .er li .allBills{
+	background:#e3e5e8;
+}
+/*.yi span.active{
+	tranform:rotate(180deg)
+	-webkit-tranform:rotate(180deg);
+}*/
+.list li .change{
+	width:100%;
+	
+	text-align:center;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	
+	background:#2fa0e4;
+}
+.list li a{
+	display:inline-block;
+	width:100%;
+	height:20px;
+	padding:20px 0;
+	
+}
+.list li span{
+	display:inline-block;
+	width:13px;
+	height:7px;
+	margin-left:15px;
+	background:url('../images/common.png') no-repeat -16px -42px;
+}
+.menulist{
+	position:absolute;
+	display:inline-block;
+	width:13px;
+	height:7px;
+	background:url('../images/common.png') no-repeat -16px -42px;
+	top:22px;
+	
+}
+.menulist1{
+	left:216px;
+}
+.menulist2{
+	left:429px;
+}
+.menulist3{
+	left:216px;
+}
+
+.list li a .active{
+	display:inline-block;
+	width:13px;
+	height:7px;
+	margin-left:15px;
+	background:url('../images/common.png') no-repeat 0 -42px;
+}
+.list .er{
+	padding:12px 0 0 0;
+}
+.list .er li{
+	height:30px;
+	margin:0;
+	line-height:22px;
+	padding-left:40px;
+	box-sizing:border-box;
+	text-align:left;
+	
+}
+.list .er .erActive{
+	height:30px;
+	margin:0;
+	line-height:22px;
+	padding-left:40px;
+	box-sizing:border-box;
+	text-align:left;
+	background:#e3e5e8;
+	
+}
+.maskLayerL{
+	position:absolute;
+	display:none;
+	top:0;
+	left:0;
+	width:392px;
+	height:770px;
+	background:#cbcccc;
+	opacity:.5;
+	z-index:40;
+}
